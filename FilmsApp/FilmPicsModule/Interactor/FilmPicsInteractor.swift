@@ -16,7 +16,7 @@ protocol FilmPicsInteractorOutput: AnyObject {
 }
 
 final class FilmPicsInteractor: FilmPicsInteractorInput {
-    var output: FilmPicsInteractorOutput?
+    weak var output: FilmPicsInteractorOutput?
     
     
 }
