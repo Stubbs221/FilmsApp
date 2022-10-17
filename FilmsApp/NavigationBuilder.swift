@@ -15,7 +15,7 @@ class NavigationBuilder {
         navigationController.navigationBar.prefersLargeTitles = true
         navigationController.navigationBar.barStyle = .black
         let largeTextStyleAttributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: UIColor.white]
+            .foregroundColor: UIColor.black]
         navigationController.navigationBar.largeTitleTextAttributes = largeTextStyleAttributes
         
 //        navigationController.tabBarItem.title
