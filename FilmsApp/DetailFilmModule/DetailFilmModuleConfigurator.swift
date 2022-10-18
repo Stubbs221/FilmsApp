@@ -8,8 +8,8 @@
 import UIKit
 
 final class DetailFilmModuleConfigurator {
-    static func configure(using navigationFactory: NavigationFactory) -> UIViewController {
-        let view = DetailFilmView()
+    static func configure(using navigationFactory: NavigationFactory, with item: MainScreenItemModel) -> UIViewController {
+        let view = DetailFilmView(item: item)
         let interactor = DetailFilmInteractor()
         let router = DetailFilmRouter()
         

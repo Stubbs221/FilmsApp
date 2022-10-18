@@ -18,6 +18,8 @@
 		1B3102BE28FC69B80013AA10 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3102BD28FC69B80013AA10 /* MainScreenPresenter.swift */; };
 		1B3102C028FC6EA30013AA10 /* MainScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3102BF28FC6EA30013AA10 /* MainScreenModuleConfigurator.swift */; };
 		1B3102C228FC71EA0013AA10 /* MainScreenView + SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3102C128FC71EA0013AA10 /* MainScreenView + SetupUI.swift */; };
+		1BC17D9328FF2DD4000C32AC /* DetailFilmView + SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC17D9228FF2DD4000C32AC /* DetailFilmView + SetupUI.swift */; };
+		1BC17D9528FF2FDD000C32AC /* DetailFilmView + Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC17D9428FF2FDD000C32AC /* DetailFilmView + Actions.swift */; };
 		1BC2ED1228FD25620050349D /* DetailFilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2ED1128FD25620050349D /* DetailFilmView.swift */; };
 		1BC2ED1428FD25DE0050349D /* DetailFilmInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2ED1328FD25DE0050349D /* DetailFilmInteractor.swift */; };
 		1BC2ED1628FD265F0050349D /* DetailFilmRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC2ED1528FD265F0050349D /* DetailFilmRouter.swift */; };
@@ -59,6 +61,8 @@
 		1B3102BD28FC69B80013AA10 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
 		1B3102BF28FC6EA30013AA10 /* MainScreenModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModuleConfigurator.swift; sourceTree = "<group>"; };
 		1B3102C128FC71EA0013AA10 /* MainScreenView + SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenView + SetupUI.swift"; sourceTree = "<group>"; };
+		1BC17D9228FF2DD4000C32AC /* DetailFilmView + SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailFilmView + SetupUI.swift"; sourceTree = "<group>"; };
+		1BC17D9428FF2FDD000C32AC /* DetailFilmView + Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailFilmView + Actions.swift"; sourceTree = "<group>"; };
 		1BC2ED1128FD25620050349D /* DetailFilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmView.swift; sourceTree = "<group>"; };
 		1BC2ED1328FD25DE0050349D /* DetailFilmInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmInteractor.swift; sourceTree = "<group>"; };
 		1BC2ED1528FD265F0050349D /* DetailFilmRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmRouter.swift; sourceTree = "<group>"; };
@@ -192,12 +196,12 @@
 		1BC2ECF928FD23640050349D /* DetailFilmModule */ = {
 			isa = PBXGroup;
 			children = (
+				1BC2ED1928FD27ED0050349D /* DetailFilmModuleConfigurator.swift */,
 				1BC2ECFE28FD239D0050349D /* View */,
 				1BC2ECFD28FD23970050349D /* Interactor */,
 				1BC2ECFC28FD23890050349D /* Presenter */,
 				1BC2ECFB28FD237F0050349D /* Entity */,
 				1BC2ECFA28FD23720050349D /* Router */,
-				1BC2ED1928FD27ED0050349D /* DetailFilmModuleConfigurator.swift */,
 			);
 			path = DetailFilmModule;
 			sourceTree = "<group>";
@@ -237,6 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				1BC2ED1128FD25620050349D /* DetailFilmView.swift */,
+				1BC17D9228FF2DD4000C32AC /* DetailFilmView + SetupUI.swift */,
+				1BC17D9428FF2FDD000C32AC /* DetailFilmView + Actions.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -480,7 +486,9 @@
 				1B3102B828FC67E40013AA10 /* NavigationBuilder.swift in Sources */,
 				1BC2ED2428FD56B50050349D /* FilmPicsModuleConfigurator.swift in Sources */,
 				1BC2ED2A28FD592E0050349D /* FullPicRouter.swift in Sources */,
+				1BC17D9328FF2DD4000C32AC /* DetailFilmView + SetupUI.swift in Sources */,
 				1BC2ED3C28FDBEE10050349D /* MainScreenView + Extensions.swift in Sources */,
+				1BC17D9528FF2FDD000C32AC /* DetailFilmView + Actions.swift in Sources */,
 				1BC2ED1628FD265F0050349D /* DetailFilmRouter.swift in Sources */,
 				1BC2ED3E28FDC6250050349D /* MainScreenCollectionViewCell.swift in Sources */,
 				1BC2ED1E28FD396C0050349D /* FilmPicsInteractor.swift in Sources */,

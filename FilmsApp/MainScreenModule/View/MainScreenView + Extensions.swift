@@ -28,7 +28,12 @@ extension MainScreenView: UICollectionViewDataSource, UICollectionViewDelegate, 
             height: 300)
     }
     
-   
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailFilmModuleConfigurator.configure(using: NavigationBuilder.build, with: self.mockDataArray[indexPath.row])
+        vc.modalPresentationStyle = .fullScreen
+        
+        present(vc, animated: true)
+    }
     
 }
 
