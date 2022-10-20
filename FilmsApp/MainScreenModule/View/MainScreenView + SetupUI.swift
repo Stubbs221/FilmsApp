@@ -27,5 +27,7 @@ extension MainScreenView {
     
     func setupNavigation() {
         navigationController?.navigationBar.topItem?.title = "Latest movies"
+        
+//        let attribu
     }
 }

@@ -24,6 +24,9 @@ class DetailFilmView: UIViewController, DetailFilmViewInput {
     var item: MainScreenItemModel?
     
     
+//    MARK: - mock data object
+    
+    var mockFotagesArray: [UIImage] = Array(repeating: UIImage(named: "testImage")!, count: 10)
     
     var output: DetailFilmViewOutput?
     
@@ -87,5 +90,60 @@ class DetailFilmView: UIViewController, DetailFilmViewInput {
 
         label.layer.cornerRadius = 5
         return label
+    }()
+    
+    lazy var fotagesFromFilmingLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Изображения"
+        label.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+        return label
+    }()
+    
+    lazy var fotagesCountLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "0"
+        label.textAlignment = .right
+        return label
+    }()
+    
+    lazy var openFotagesFromFilmingButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(systemName: "chevron.right"), for: .normal)
+        return button
+    }()
+    
+//    MARK: - Footage from filming CollectionView with horizontal scrolling
+    lazy var fotagesCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        
+        layout.scrollDirection = .horizontal
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.register(FotageFromFilmingCellCollectionViewCell.self, forCellWithReuseIdentifier: FotageFromFilmingCellCollectionViewCell.identifier)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        collectionView.showsHorizontalScrollIndicator = false
+        return collectionView
+    }()
+    
+//    MARK: - Block of description views
+    lazy var descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Описание"
+        label.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+        return label
+    }()
+    
+    lazy var descriptionTextView: UITextView = {
+        let textView = UITextView()
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.font = UIFont.systemFont(ofSize: 16)
+        textView.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lectus pellentesque, pellentesque ex eu, laoreet purus. Cras vel ipsum rutrum, tincidunt lectus sed, vehicula felis. Nulla faucibus dignissim purus ac mattis. Nunc ultrices luctus venenatis. Nulla sit amet magna venenatis, mollis ex sed, lacinia justo. Nunc imperdiet sit amet."
+        return textView
     }()
 }

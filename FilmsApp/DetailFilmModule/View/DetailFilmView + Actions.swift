@@ -14,6 +14,7 @@ extension DetailFilmView {
         self.ratingLabel.text = "Рейтинг - \(item.rating)"
         self.originalTitleLabel.text = item.originalTitle
         self.releaseDateLabel.text = item.releaseDate
+        self.fotagesCountLabel.text = String(mockFotagesArray.count)
     }
     
     @objc func backButtonTapped() {
