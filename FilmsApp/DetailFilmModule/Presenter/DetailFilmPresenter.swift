@@ -16,6 +16,8 @@ protocol DetailFilmPresenterOutput {
 }
 
 final class DetailFilmPresenter: DetailFilmPresenterInput {
+    
+    
     var output: DetailFilmPresenterOutput?
     
     private weak var view: DetailFilmViewInput!
@@ -36,5 +38,7 @@ extension DetailFilmPresenter: DetailFilmViewOutput {
 }
 
 extension DetailFilmPresenter: DetailFilmInteractorOutput {
-    
+    func userDidTapOnPoster() {
+        router.showPosterFullView(with: UIImage(named: "testImage"))
+    }
 }

@@ -15,7 +15,7 @@ protocol DetailFilmViewInput: AnyObject {
 }
 
 protocol DetailFilmViewOutput {
-    
+    func userDidTapOnPoster()
 }
 
 class DetailFilmView: UIViewController, DetailFilmViewInput {
@@ -55,9 +55,21 @@ class DetailFilmView: UIViewController, DetailFilmViewInput {
         imageView.layer.cornerRadius = 10
         imageView.contentMode = .scaleAspectFit
         imageView.backgroundColor = .systemGray5
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(gestureForFilmPoster)
         return imageView
     }()
     
+    lazy var gestureForFilmPoster: UITapGestureRecognizer = {
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(filmPostedDidTapped))
+//        gesture.
+        return gesture
+    }()
+    
+    @objc func filmPostedDidTapped() {
+        print("test")
+        self.output?.userDidTapOnPoster()
+    }
     lazy var originalTitleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false

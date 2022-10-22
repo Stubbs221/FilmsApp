@@ -36,5 +36,144 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02C220A2-AF6B-4413-B484-63E9B409BA96"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "gestureForFilmPoster"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "02C220A2-AF6B-4413-B484-63E9B409BA96 - 5d5f88f60d2bbe19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FilmsApp.DetailFilmView.init(item: FilmsApp.MainScreenItemModel) -&gt; FilmsApp.DetailFilmView"
+                  moduleName = "FilmsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vasilyMaslov/Desktop/skillFactory_01/FilmsApp/FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "588">
+               </Location>
+               <Location
+                  uuid = "02C220A2-AF6B-4413-B484-63E9B409BA96 - e5189e89ae3675b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FilmsApp.DetailFilmView.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;FilmsApp.DetailFilmView&gt;"
+                  moduleName = "FilmsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vasilyMaslov/Desktop/skillFactory_01/FilmsApp/FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "472">
+               </Location>
+               <Location
+                  uuid = "02C220A2-AF6B-4413-B484-63E9B409BA96 - 1fbc09015ad68aed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FilmsApp.DetailFilmView.gestureForFilmPoster.getter : __C.UITapGestureRecognizer"
+                  moduleName = "FilmsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vasilyMaslov/Desktop/skillFactory_01/FilmsApp/FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "02C220A2-AF6B-4413-B484-63E9B409BA96 - 7d243c2cc2124d10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UITapGestureRecognizer in FilmsApp.DetailFilmView.gestureForFilmPoster.getter : __C.UITapGestureRecognizer"
+                  moduleName = "FilmsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vasilyMaslov/Desktop/skillFactory_01/FilmsApp/FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "02C220A2-AF6B-4413-B484-63E9B409BA96 - ef65303b08b822f9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FilmsApp.DetailFilmView.gestureForFilmPoster.setter : __C.UITapGestureRecognizer"
+                  moduleName = "FilmsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vasilyMaslov/Desktop/skillFactory_01/FilmsApp/FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "02C220A2-AF6B-4413-B484-63E9B409BA96 - f57de83cfc7d50ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FilmsApp.DetailFilmView.gestureForFilmPoster.modify : __C.UITapGestureRecognizer"
+                  moduleName = "FilmsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vasilyMaslov/Desktop/skillFactory_01/FilmsApp/FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "02C220A2-AF6B-4413-B484-63E9B409BA96 - 610ad30e9d5fcc09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FilmsApp.DetailFilmView.gestureForFilmPoster.modify : __C.UITapGestureRecognizer with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "FilmsApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vasilyMaslov/Desktop/skillFactory_01/FilmsApp/FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28F6999B-9F1D-422F-9540-AC1AE7B51BB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "filmPosterImageView"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
