@@ -63,6 +63,7 @@ class DetailFilmView: UIViewController, DetailFilmViewInput {
     lazy var gestureForFilmPoster: UITapGestureRecognizer = {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(filmPostedDidTapped))
 //        gesture.
+        gesture.numberOfTapsRequired = 2
         return gesture
     }()
     

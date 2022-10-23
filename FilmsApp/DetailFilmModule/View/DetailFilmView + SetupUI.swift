@@ -67,7 +67,7 @@ extension DetailFilmView {
     }
     
     func setupNavigation(with title: String){
-//        navigationController?.navigationBar.topItem?.title = title
+        navigationController?.navigationBar.topItem?.title = title
         
         let backButton = UIButton()
         backButton.setImage(UIImage(systemName: "chevron.backward", withConfiguration: UIImage.SymbolConfiguration(weight: .bold)), for: .normal)
@@ -75,7 +75,7 @@ extension DetailFilmView {
 //        navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         let backBarButtonItem = UIBarButtonItem(customView: backButton)
         navigationItem.leftBarButtonItem = backBarButtonItem
-        navigationController?.navigationBar.prefersLargeTitles = false
+//        navigationController?.navigationBar.prefersLargeTitles = false
 //        self.navigationItem.backBarButtonItem = backBarButtonItem
 //        self.navigationItem.backButtonTitle = "dfvd"
     }
