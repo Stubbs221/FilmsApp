@@ -18,11 +18,12 @@ protocol DetailFilmViewOutput {
     func userDidTapOnPoster()
 }
 
-class DetailFilmView: UIViewController, DetailFilmViewInput {
+class DetailFilmView: UIViewController, DetailFilmViewInput, UIViewControllerTransitioningDelegate {
     
     
     var item: MainScreenItemModel?
     
+    var transition: RoundingTransition = RoundingTransition()
     
 //    MARK: - mock data object
     
@@ -37,6 +38,22 @@ class DetailFilmView: UIViewController, DetailFilmViewInput {
         setupUI()
         setupNavigation(with: item!.originalTitle)
         view.backgroundColor = .white
+    }
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionProfile = .show
+        transition.start = filmPosterImageView.center
+        transition.roundColor = .lightGray
+        
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionProfile = .cancel
+        transition.start = filmPosterImageView.center
+        transition.roundColor = .lightGray
+        
+        return transition
     }
     
     required init(item: MainScreenItemModel) {
@@ -171,7 +188,7 @@ class DetailFilmView: UIViewController, DetailFilmViewInput {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.font = UIFont.systemFont(ofSize: 16)
-        textView.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lectus pellentesque, pellentesque ex eu, laoreet purus. Cras vel ipsum rutrum, tincidunt lectus sed, vehicula felis. Nulla faucibus dignissim purus ac mattis. Nunc ultrices luctus venenatis. Nulla sit amet magna venenatis, mollis ex sed, lacinia justo. Nunc imperdiet sit amet."
+//        textView.text = 
         textView.sizeToFit()
         textView.isScrollEnabled = false
         textView.isUserInteractionEnabled = false

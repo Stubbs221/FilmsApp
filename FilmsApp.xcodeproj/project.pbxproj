@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B21139C2912BB5500C1977D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21139B2912BB5500C1977D /* NetworkService.swift */; };
 		1B283A3128FC65D100B900D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B283A3028FC65D100B900D9 /* AppDelegate.swift */; };
 		1B283A3328FC65D100B900D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B283A3228FC65D100B900D9 /* SceneDelegate.swift */; };
 		1B283A3A28FC65D200B900D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B283A3928FC65D200B900D9 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B21139B2912BB5500C1977D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		1B283A2D28FC65D100B900D9 /* FilmsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B283A3028FC65D100B900D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B283A3228FC65D100B900D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B21139A2912BB4800C1977D /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1B21139B2912BB5500C1977D /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 		1B283A2428FC65D100B900D9 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +199,7 @@
 		1B283A4828FC672000B900D9 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				1B21139A2912BB4800C1977D /* NetworkService */,
 				1B3102B928FC68EB0013AA10 /* MainScreenInteractor.swift */,
 			);
 			path = Interactor;
@@ -538,6 +549,7 @@
 				1BC2ED1428FD25DE0050349D /* DetailFilmInteractor.swift in Sources */,
 				1BCFF5592901D3960048513D /* FotageFromFilmingCellCollectionViewCell.swift in Sources */,
 				1B3102C028FC6EA30013AA10 /* MainScreenModuleConfigurator.swift in Sources */,
+				1B21139C2912BB5500C1977D /* NetworkService.swift in Sources */,
 				1BC2ED1828FD26E30050349D /* DetailFilmPresenter.swift in Sources */,
 				1BC2ED1228FD25620050349D /* DetailFilmView.swift in Sources */,
 				1BC2ED3228FD5C480050349D /* FavoriteFilmsInteractor.swift in Sources */,

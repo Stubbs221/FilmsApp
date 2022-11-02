@@ -12,4 +12,6 @@ struct MainScreenItemModel {
     var originalTitle: String
     var releaseDate: String
     var rating: String
+    var description: String
+    
 }

@@ -16,6 +16,7 @@ final class DetailFilmModuleConfigurator {
         let presenter = DetailFilmPresenter(view: view, interactor: interactor, router: router)
         
         view.output = presenter
+        
         interactor.output = presenter
         
         router.rootViewController = view

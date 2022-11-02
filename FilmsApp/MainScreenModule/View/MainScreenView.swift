@@ -19,7 +19,7 @@ class MainScreenView: UIViewController, MainScreenViewInput {
     var output: MainScreenViewOutput?
     
 
-    var mockDataArray: [MainScreenItemModel] = Array(repeating: MainScreenItemModel(filmPosterImage: UIImage(named: "testImage")!, originalTitle: "Slime", releaseDate: "2009", rating: "9/10"), count: 10)
+    var mockDataArray: [MainScreenItemModel] = Array(repeating: MainScreenItemModel(filmPosterImage: UIImage(named: "testImage")!, originalTitle: "Slime", releaseDate: "2009", rating: "9/10", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lectus pellentesque, pellentesque ex eu, laoreet purus. Cras vel ipsum rutrum, tincidunt lectus sed, vehicula felis. Nulla faucibus dignissim purus ac mattis. Nunc ultrices luctus venenatis. Nulla sit amet magna venenatis, mollis ex sed, lacinia justo. Nunc imperdiet sit amet."), count: 10)
     
     override func viewDidLoad() {
         super.viewDidLoad()

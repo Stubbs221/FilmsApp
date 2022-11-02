@@ -9,6 +9,8 @@ import UIKit
 
 protocol MainScreenInteractorInput {
     var output: MainScreenInteractorOutput? { get set }
+    
+//    func fetchData
 }
 
 protocol MainScreenInteractorOutput: AnyObject {

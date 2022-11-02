@@ -15,6 +15,7 @@ extension DetailFilmView {
         self.originalTitleLabel.text = item.originalTitle
         self.releaseDateLabel.text = item.releaseDate
         self.fotagesCountLabel.text = String(mockFotagesArray.count)
+        self.descriptionTextView.text = item.description
     }
     
     @objc func backButtonTapped() {

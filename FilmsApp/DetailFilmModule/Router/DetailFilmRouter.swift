@@ -16,7 +16,8 @@ final class DetailFilmRouter: DetailFilmRouterInput {
     
     func showPosterFullView(with poster: UIImage?) {
         let vc = PosterFullView(with: poster)
-//        vc.modalPresentationStyle = .popover
+        vc.transitioningDelegate = rootViewController as? any UIViewControllerTransitioningDelegate
+        vc.modalPresentationStyle = .custom
         
         rootViewController?.present(vc, animated: true)
     }
