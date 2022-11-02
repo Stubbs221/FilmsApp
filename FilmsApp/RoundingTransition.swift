@@ -33,7 +33,7 @@ extension RoundingTransition: UIViewControllerAnimatedTransitioning {
     }
     
     func roundFrame(withViewCenter viewCenter: CGPoint, size viewSize: CGSize, startPoint: CGPoint) -> CGRect {
-        
+        return CGRect()
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {

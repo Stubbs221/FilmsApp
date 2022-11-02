@@ -46,8 +46,8 @@
             filePath = "FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "gestureForFilmPoster"
             landmarkType = "24">
             <Locations>
@@ -169,8 +169,8 @@
             filePath = "FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "filmPosterImageView"
             landmarkType = "24">
          </BreakpointContent>

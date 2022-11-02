@@ -49,6 +49,21 @@ class DetailFilmView: UIViewController, DetailFilmViewInput {
         fatalError("init(coder:) has not been implemented")
     }
 
+    lazy var detailFilmScrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+//        scrollView.showsVerticalScrollIndicator = false
+        return scrollView
+    }()
+    
+    lazy var detailFilmContentView: UIView = {
+        let view = UIView()
+//        view.backgroundColor = .cyan
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
     lazy var filmPosterImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -157,6 +172,12 @@ class DetailFilmView: UIViewController, DetailFilmViewInput {
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.font = UIFont.systemFont(ofSize: 16)
         textView.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lectus pellentesque, pellentesque ex eu, laoreet purus. Cras vel ipsum rutrum, tincidunt lectus sed, vehicula felis. Nulla faucibus dignissim purus ac mattis. Nunc ultrices luctus venenatis. Nulla sit amet magna venenatis, mollis ex sed, lacinia justo. Nunc imperdiet sit amet."
+        textView.sizeToFit()
+        textView.isScrollEnabled = false
+        textView.isUserInteractionEnabled = false
+        textView.isEditable = false
+        textView.backgroundColor = UIColor.systemGray5
+        textView.layer.cornerRadius = 15
         return textView
     }()
 }

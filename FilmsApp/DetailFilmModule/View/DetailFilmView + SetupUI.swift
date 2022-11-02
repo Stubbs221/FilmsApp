@@ -10,23 +10,37 @@ import UIKit
 extension DetailFilmView {
     func setupUI() {
         
+        view.addSubview(detailFilmScrollView)
+        detailFilmScrollView.addSubview(detailFilmContentView)
 //       MARK: - Film description views
-        view.addSubview(filmPosterImageView)
-        view.addSubview(originalTitleLabel)
-        view.addSubview(releaseDateLabel)
-        view.addSubview(ratingLabel)
+        detailFilmContentView.addSubview(filmPosterImageView)
+        detailFilmContentView.addSubview(originalTitleLabel)
+        detailFilmContentView.addSubview(releaseDateLabel)
+        detailFilmContentView.addSubview(ratingLabel)
 //        MARK: - Fotages from filming views
-        view.addSubview(fotagesFromFilmingLabel)
-        view.addSubview(fotagesCountLabel)
-        view.addSubview(openFotagesFromFilmingButton)
-        view.addSubview(fotagesCollectionView)
+        detailFilmContentView.addSubview(fotagesFromFilmingLabel)
+        detailFilmContentView.addSubview(fotagesCountLabel)
+        detailFilmContentView.addSubview(openFotagesFromFilmingButton)
+        detailFilmContentView.addSubview(fotagesCollectionView)
 
-        view.addSubview(descriptionLabel)
-        view.addSubview(descriptionTextView)
+        detailFilmContentView.addSubview(descriptionLabel)
+        detailFilmContentView.addSubview(descriptionTextView)
         
         NSLayoutConstraint.activate([
-            filmPosterImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-            filmPosterImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
+            detailFilmScrollView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            detailFilmScrollView.widthAnchor.constraint(equalTo: view.widthAnchor),
+            detailFilmScrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            detailFilmScrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+        NSLayoutConstraint.activate([
+            detailFilmContentView.centerXAnchor.constraint(equalTo: detailFilmScrollView.centerXAnchor),
+            detailFilmContentView.widthAnchor.constraint(equalTo: detailFilmScrollView.widthAnchor),
+            detailFilmContentView.topAnchor.constraint(equalTo: detailFilmScrollView.topAnchor),
+            detailFilmContentView.bottomAnchor.constraint(equalTo: detailFilmScrollView.bottomAnchor)
+        ])
+        NSLayoutConstraint.activate([
+            filmPosterImageView.leadingAnchor.constraint(equalTo: detailFilmContentView.leadingAnchor, constant: 10),
+            filmPosterImageView.topAnchor.constraint(equalTo: detailFilmContentView.safeAreaLayoutGuide.topAnchor, constant: 10),
             filmPosterImageView.heightAnchor.constraint(equalToConstant: 290),
             filmPosterImageView.widthAnchor.constraint(equalToConstant: 180)
         ])
@@ -47,13 +61,13 @@ extension DetailFilmView {
             fotagesFromFilmingLabel.topAnchor.constraint(equalTo: filmPosterImageView.bottomAnchor, constant: 20)])
         NSLayoutConstraint.activate([
             openFotagesFromFilmingButton.topAnchor.constraint(equalTo: fotagesFromFilmingLabel.topAnchor),
-            openFotagesFromFilmingButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10)])
+            openFotagesFromFilmingButton.trailingAnchor.constraint(equalTo: detailFilmContentView.trailingAnchor, constant: -10)])
         NSLayoutConstraint.activate([
             fotagesCountLabel.topAnchor.constraint(equalTo: fotagesFromFilmingLabel.topAnchor),
             fotagesCountLabel.trailingAnchor.constraint(equalTo: openFotagesFromFilmingButton.leadingAnchor, constant: -10)])
         NSLayoutConstraint.activate([
-            fotagesCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            fotagesCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            fotagesCollectionView.leadingAnchor.constraint(equalTo: detailFilmContentView.leadingAnchor),
+            fotagesCollectionView.trailingAnchor.constraint(equalTo: detailFilmContentView.trailingAnchor),
             fotagesCollectionView.topAnchor.constraint(equalTo: fotagesFromFilmingLabel.bottomAnchor, constant: 0),
             fotagesCollectionView.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.width / 3.5 + 30)])
         NSLayoutConstraint.activate([
@@ -63,7 +77,8 @@ extension DetailFilmView {
             descriptionTextView.leadingAnchor.constraint(equalTo: filmPosterImageView.leadingAnchor),
             descriptionTextView.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 10),
             descriptionTextView.trailingAnchor.constraint(equalTo: openFotagesFromFilmingButton.trailingAnchor),
-            descriptionTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)])
+//            descriptionTextView.heightAnchor.constraint(equalToConstant: 500),
+            descriptionTextView.bottomAnchor.constraint(equalTo: detailFilmContentView.bottomAnchor, constant: -100)])
     }
     
     func setupNavigation(with title: String){
