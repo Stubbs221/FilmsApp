@@ -11,10 +11,12 @@ class PosterFullView: UIViewController {
 
     var posterImage: UIImage?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.posterFullImageView.image = posterImage
         self.setupUI()
+        
     }
     
     lazy var posterFullImageView: UIImageView = {
@@ -50,5 +52,6 @@ class PosterFullView: UIViewController {
     
     @objc func closePosterViewButtonPressed() {
         self.dismiss(animated: true)
+//        navigationController?.popViewController(animated: true)
     }
 }

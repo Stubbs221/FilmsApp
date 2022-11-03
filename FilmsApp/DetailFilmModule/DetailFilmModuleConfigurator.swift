@@ -20,7 +20,7 @@ final class DetailFilmModuleConfigurator {
         interactor.output = presenter
         
         router.rootViewController = view
-        
+        router.transitionDelegate = view
         return navigationFactory(view)
     }
 }

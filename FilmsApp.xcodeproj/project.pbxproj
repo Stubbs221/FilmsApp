@@ -20,6 +20,7 @@
 		1B3102C028FC6EA30013AA10 /* MainScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3102BF28FC6EA30013AA10 /* MainScreenModuleConfigurator.swift */; };
 		1B3102C228FC71EA0013AA10 /* MainScreenView + SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3102C128FC71EA0013AA10 /* MainScreenView + SetupUI.swift */; };
 		1B4D3FC22908711300AE8138 /* RoundingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D3FC12908711300AE8138 /* RoundingTransition.swift */; };
+		1B5B0A9829144D1C009FAEB0 /* PosterFullModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B0A9729144D1C009FAEB0 /* PosterFullModuleConfigurator.swift */; };
 		1BA753F72901E61E002ACEB0 /* PosterFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA753F62901E61E002ACEB0 /* PosterFullView.swift */; };
 		1BA753F92901E724002ACEB0 /* PosterFullView + SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA753F82901E724002ACEB0 /* PosterFullView + SetupUI.swift */; };
 		1BC17D9328FF2DD4000C32AC /* DetailFilmView + SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC17D9228FF2DD4000C32AC /* DetailFilmView + SetupUI.swift */; };
@@ -69,6 +70,7 @@
 		1B3102BF28FC6EA30013AA10 /* MainScreenModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModuleConfigurator.swift; sourceTree = "<group>"; };
 		1B3102C128FC71EA0013AA10 /* MainScreenView + SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenView + SetupUI.swift"; sourceTree = "<group>"; };
 		1B4D3FC12908711300AE8138 /* RoundingTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundingTransition.swift; sourceTree = "<group>"; };
+		1B5B0A9729144D1C009FAEB0 /* PosterFullModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterFullModuleConfigurator.swift; sourceTree = "<group>"; };
 		1BA753F62901E61E002ACEB0 /* PosterFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterFullView.swift; sourceTree = "<group>"; };
 		1BA753F82901E724002ACEB0 /* PosterFullView + SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PosterFullView + SetupUI.swift"; sourceTree = "<group>"; };
 		1BC17D9228FF2DD4000C32AC /* DetailFilmView + SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailFilmView + SetupUI.swift"; sourceTree = "<group>"; };
@@ -431,6 +433,7 @@
 		1BCFF55A2901E5560048513D /* PosterFullModule */ = {
 			isa = PBXGroup;
 			children = (
+				1B5B0A9729144D1C009FAEB0 /* PosterFullModuleConfigurator.swift */,
 				1BCFF55B2901E5680048513D /* View */,
 			);
 			path = PosterFullModule;
@@ -515,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5B0A9829144D1C009FAEB0 /* PosterFullModuleConfigurator.swift in Sources */,
 				1B4D3FC22908711300AE8138 /* RoundingTransition.swift in Sources */,
 				1BCFF5572901D2A30048513D /* DetailFilmView + Extensions.swift in Sources */,
 				1B3102BA28FC68EB0013AA10 /* MainScreenInteractor.swift in Sources */,

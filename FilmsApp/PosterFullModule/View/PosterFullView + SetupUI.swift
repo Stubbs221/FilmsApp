@@ -20,6 +20,6 @@ extension PosterFullView {
             posterFullImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
         NSLayoutConstraint.activate([
             closePosterViewButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
-            closePosterViewButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 100)])
+            closePosterViewButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50)])
     }
 }

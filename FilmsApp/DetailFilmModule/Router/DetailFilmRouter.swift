@@ -14,9 +14,13 @@ protocol DetailFilmRouterInput {
 final class DetailFilmRouter: DetailFilmRouterInput {
     var rootViewController: UIViewController?
     
+    var transitionDelegate: UIViewControllerTransitioningDelegate?
+    
     func showPosterFullView(with poster: UIImage?) {
         let vc = PosterFullView(with: poster)
-        vc.transitioningDelegate = rootViewController as? any UIViewControllerTransitioningDelegate
+        
+//        vc.transitioningDelegate = rootViewController
+        
         vc.modalPresentationStyle = .custom
         
         rootViewController?.present(vc, animated: true)
