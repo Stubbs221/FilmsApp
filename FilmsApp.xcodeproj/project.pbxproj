@@ -19,6 +19,11 @@
 		1B3102BE28FC69B80013AA10 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3102BD28FC69B80013AA10 /* MainScreenPresenter.swift */; };
 		1B3102C028FC6EA30013AA10 /* MainScreenModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3102BF28FC6EA30013AA10 /* MainScreenModuleConfigurator.swift */; };
 		1B3102C228FC71EA0013AA10 /* MainScreenView + SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3102C128FC71EA0013AA10 /* MainScreenView + SetupUI.swift */; };
+		1B3C66602923CA6800B94645 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C665F2923CA6800B94645 /* TabBarPresenter.swift */; };
+		1B3C66622923CB3300B94645 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C66612923CB3300B94645 /* TabBarView.swift */; };
+		1B3C66642923CF9D00B94645 /* TabBarModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C66632923CF9D00B94645 /* TabBarModuleConfigurator.swift */; };
+		1B3C66662923F05100B94645 /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C66652923F05100B94645 /* TabBarInteractor.swift */; };
+		1B3C66682923F19000B94645 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C66672923F19000B94645 /* TabBarRouter.swift */; };
 		1B4D3FC22908711300AE8138 /* RoundingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D3FC12908711300AE8138 /* RoundingTransition.swift */; };
 		1B5B0A9829144D1C009FAEB0 /* PosterFullModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B0A9729144D1C009FAEB0 /* PosterFullModuleConfigurator.swift */; };
 		1BA753F72901E61E002ACEB0 /* PosterFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA753F62901E61E002ACEB0 /* PosterFullView.swift */; };
@@ -69,6 +74,11 @@
 		1B3102BD28FC69B80013AA10 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
 		1B3102BF28FC6EA30013AA10 /* MainScreenModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModuleConfigurator.swift; sourceTree = "<group>"; };
 		1B3102C128FC71EA0013AA10 /* MainScreenView + SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainScreenView + SetupUI.swift"; sourceTree = "<group>"; };
+		1B3C665F2923CA6800B94645 /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		1B3C66612923CB3300B94645 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		1B3C66632923CF9D00B94645 /* TabBarModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModuleConfigurator.swift; sourceTree = "<group>"; };
+		1B3C66652923F05100B94645 /* TabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
+		1B3C66672923F19000B94645 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 		1B4D3FC12908711300AE8138 /* RoundingTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundingTransition.swift; sourceTree = "<group>"; };
 		1B5B0A9729144D1C009FAEB0 /* PosterFullModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterFullModuleConfigurator.swift; sourceTree = "<group>"; };
 		1BA753F62901E61E002ACEB0 /* PosterFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterFullView.swift; sourceTree = "<group>"; };
@@ -142,6 +152,7 @@
 		1B283A2F28FC65D100B900D9 /* FilmsApp */ = {
 			isa = PBXGroup;
 			children = (
+				1B3C66592923C9DD00B94645 /* TabBarModule */,
 				1B4D3FC12908711300AE8138 /* RoundingTransition.swift */,
 				1BCFF55A2901E5560048513D /* PosterFullModule */,
 				1BC2ED0B28FD24420050349D /* FavoriteFilmsModule */,
@@ -216,6 +227,50 @@
 				1B3102C128FC71EA0013AA10 /* MainScreenView + SetupUI.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1B3C66592923C9DD00B94645 /* TabBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				1B3C66632923CF9D00B94645 /* TabBarModuleConfigurator.swift */,
+				1B3C665A2923CA0900B94645 /* View */,
+				1B3C665C2923CA1800B94645 /* Interactor */,
+				1B3C665E2923CA6000B94645 /* Presenter */,
+				1B3C665D2923CA5A00B94645 /* Router */,
+			);
+			path = TabBarModule;
+			sourceTree = "<group>";
+		};
+		1B3C665A2923CA0900B94645 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B3C66612923CB3300B94645 /* TabBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B3C665C2923CA1800B94645 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1B3C66652923F05100B94645 /* TabBarInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1B3C665D2923CA5A00B94645 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1B3C66672923F19000B94645 /* TabBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1B3C665E2923CA6000B94645 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1B3C665F2923CA6800B94645 /* TabBarPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		1BC2ECF928FD23640050349D /* DetailFilmModule */ = {
@@ -522,6 +577,7 @@
 				1B4D3FC22908711300AE8138 /* RoundingTransition.swift in Sources */,
 				1BCFF5572901D2A30048513D /* DetailFilmView + Extensions.swift in Sources */,
 				1B3102BA28FC68EB0013AA10 /* MainScreenInteractor.swift in Sources */,
+				1B3C66602923CA6800B94645 /* TabBarPresenter.swift in Sources */,
 				1BC2ED3828FD73400050349D /* FavoriteFilmsModuleConfigurator.swift in Sources */,
 				1BC2ED2228FD3A4B0050349D /* FilmPicsPresenter.swift in Sources */,
 				1BC2ED3628FD5DF30050349D /* FavoriteFilmsPresenter.swift in Sources */,
@@ -545,17 +601,21 @@
 				1BA753F92901E724002ACEB0 /* PosterFullView + SetupUI.swift in Sources */,
 				1B3102BC28FC69640013AA10 /* MainScreenRouter.swift in Sources */,
 				1BC2ED2828FD58840050349D /* FullPicInteractor.swift in Sources */,
+				1B3C66622923CB3300B94645 /* TabBarView.swift in Sources */,
 				1B3102B628FC67B30013AA10 /* MainScreenView.swift in Sources */,
 				1BA753F72901E61E002ACEB0 /* PosterFullView.swift in Sources */,
 				1B3102C228FC71EA0013AA10 /* MainScreenView + SetupUI.swift in Sources */,
 				1BC2ED2C28FD596A0050349D /* FullPicPresenter.swift in Sources */,
 				1B283A3328FC65D100B900D9 /* SceneDelegate.swift in Sources */,
+				1B3C66642923CF9D00B94645 /* TabBarModuleConfigurator.swift in Sources */,
 				1BC2ED1428FD25DE0050349D /* DetailFilmInteractor.swift in Sources */,
 				1BCFF5592901D3960048513D /* FotageFromFilmingCellCollectionViewCell.swift in Sources */,
 				1B3102C028FC6EA30013AA10 /* MainScreenModuleConfigurator.swift in Sources */,
 				1B21139C2912BB5500C1977D /* NetworkService.swift in Sources */,
+				1B3C66662923F05100B94645 /* TabBarInteractor.swift in Sources */,
 				1BC2ED1828FD26E30050349D /* DetailFilmPresenter.swift in Sources */,
 				1BC2ED1228FD25620050349D /* DetailFilmView.swift in Sources */,
+				1B3C66682923F19000B94645 /* TabBarRouter.swift in Sources */,
 				1BC2ED3228FD5C480050349D /* FavoriteFilmsInteractor.swift in Sources */,
 				1BC2ED2628FD57E50050349D /* FullPicView.swift in Sources */,
 				1BC2ED3428FD5DAB0050349D /* FavoriteFilmsRouter.swift in Sources */,

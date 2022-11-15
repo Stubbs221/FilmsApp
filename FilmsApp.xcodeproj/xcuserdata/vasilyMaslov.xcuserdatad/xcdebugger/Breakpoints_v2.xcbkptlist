@@ -46,8 +46,8 @@
             filePath = "FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "gestureForFilmPoster"
             landmarkType = "24">
             <Locations>
@@ -169,8 +169,8 @@
             filePath = "FilmsApp/DetailFilmModule/View/DetailFilmView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "filmPosterImageView"
             landmarkType = "24">
          </BreakpointContent>
@@ -179,7 +179,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "60540F76-5E98-450A-96D6-A24676C1A3D8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FilmsApp/PosterFullModule/View/PosterFullView.swift"
@@ -195,14 +195,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4A7BD1D2-D1E1-46CE-B1DB-15516E312B49"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FilmsApp/DetailFilmModule/Router/DetailFilmRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "showPosterFullView(with:)"
             landmarkType = "7">
          </BreakpointContent>

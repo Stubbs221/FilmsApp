@@ -7,10 +7,11 @@
 
 import UIKit
 
-protocol DetailFilmViewInput: AnyObject {
+protocol DetailFilmViewInput: AnyObject, UIViewControllerTransitioningDelegate, UIViewController {
     var output: DetailFilmViewOutput? { get set }
     var item: MainScreenItemModel? { get set }
     
+//    var cameFromFav: Bool { get set }
     init(item: MainScreenItemModel)
 }
 
@@ -18,10 +19,13 @@ protocol DetailFilmViewOutput {
     func userDidTapOnPoster()
 }
 
-class DetailFilmView: UIViewController, DetailFilmViewInput, UIViewControllerTransitioningDelegate {
+class DetailFilmView: UIViewController, DetailFilmViewInput {
     
-    
+
     var item: MainScreenItemModel?
+    
+//    пришел ли пользователь с экрана избранных фильмов
+//    var cameFromFav: Bool
     
     var transition: RoundingTransition = RoundingTransition()
     
@@ -34,10 +38,17 @@ class DetailFilmView: UIViewController, DetailFilmViewInput, UIViewControllerTra
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         configureViewData(with: item)
         setupUI()
         setupNavigation(with: item!.originalTitle)
         view.backgroundColor = .white
+        
+//        if self.cameFromFav {
+//
+//        }
+        
     }
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
@@ -57,9 +68,10 @@ class DetailFilmView: UIViewController, DetailFilmViewInput, UIViewControllerTra
     }
     
     required init(item: MainScreenItemModel) {
-        
+//        self.cameFromFav = cameFromFav
         super.init(nibName: nil, bundle: nil)
         self.item = item
+        
     }
     
     required init?(coder: NSCoder) {
@@ -75,9 +87,7 @@ class DetailFilmView: UIViewController, DetailFilmViewInput, UIViewControllerTra
     
     lazy var detailFilmContentView: UIView = {
         let view = UIView()
-//        view.backgroundColor = .cyan
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     
