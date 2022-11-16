@@ -24,6 +24,9 @@
 		1B3C66642923CF9D00B94645 /* TabBarModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C66632923CF9D00B94645 /* TabBarModuleConfigurator.swift */; };
 		1B3C66662923F05100B94645 /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C66652923F05100B94645 /* TabBarInteractor.swift */; };
 		1B3C66682923F19000B94645 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C66672923F19000B94645 /* TabBarRouter.swift */; };
+		1B3C666C2923FB3600B94645 /* FavoriteFilmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C666B2923FB3600B94645 /* FavoriteFilmCell.swift */; };
+		1B3C666E2923FB7B00B94645 /* FavoriteFilmsView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C666D2923FB7B00B94645 /* FavoriteFilmsView + Extensions.swift */; };
+		1B3C66702924039A00B94645 /* FavoriteFilmView + SetupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C666F2924039A00B94645 /* FavoriteFilmView + SetupUI.swift */; };
 		1B4D3FC22908711300AE8138 /* RoundingTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D3FC12908711300AE8138 /* RoundingTransition.swift */; };
 		1B5B0A9829144D1C009FAEB0 /* PosterFullModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B0A9729144D1C009FAEB0 /* PosterFullModuleConfigurator.swift */; };
 		1BA753F72901E61E002ACEB0 /* PosterFullView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA753F62901E61E002ACEB0 /* PosterFullView.swift */; };
@@ -79,6 +82,9 @@
 		1B3C66632923CF9D00B94645 /* TabBarModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModuleConfigurator.swift; sourceTree = "<group>"; };
 		1B3C66652923F05100B94645 /* TabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
 		1B3C66672923F19000B94645 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		1B3C666B2923FB3600B94645 /* FavoriteFilmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFilmCell.swift; sourceTree = "<group>"; };
+		1B3C666D2923FB7B00B94645 /* FavoriteFilmsView + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteFilmsView + Extensions.swift"; sourceTree = "<group>"; };
+		1B3C666F2924039A00B94645 /* FavoriteFilmView + SetupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteFilmView + SetupUI.swift"; sourceTree = "<group>"; };
 		1B4D3FC12908711300AE8138 /* RoundingTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundingTransition.swift; sourceTree = "<group>"; };
 		1B5B0A9729144D1C009FAEB0 /* PosterFullModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterFullModuleConfigurator.swift; sourceTree = "<group>"; };
 		1BA753F62901E61E002ACEB0 /* PosterFullView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterFullView.swift; sourceTree = "<group>"; };
@@ -481,6 +487,9 @@
 			isa = PBXGroup;
 			children = (
 				1BC2ED2F28FD5BCB0050349D /* FavoriteFilmsView.swift */,
+				1B3C666D2923FB7B00B94645 /* FavoriteFilmsView + Extensions.swift */,
+				1B3C666B2923FB3600B94645 /* FavoriteFilmCell.swift */,
+				1B3C666F2924039A00B94645 /* FavoriteFilmView + SetupUI.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -587,6 +596,7 @@
 				1BC2ED4228FDDEEE0050349D /* NavigationController + Extension.swift in Sources */,
 				1B283A3128FC65D100B900D9 /* AppDelegate.swift in Sources */,
 				1B3102BE28FC69B80013AA10 /* MainScreenPresenter.swift in Sources */,
+				1B3C666C2923FB3600B94645 /* FavoriteFilmCell.swift in Sources */,
 				1B3102B828FC67E40013AA10 /* NavigationBuilder.swift in Sources */,
 				1BC2ED2428FD56B50050349D /* FilmPicsModuleConfigurator.swift in Sources */,
 				1BC2ED2A28FD592E0050349D /* FullPicRouter.swift in Sources */,
@@ -613,9 +623,11 @@
 				1B3102C028FC6EA30013AA10 /* MainScreenModuleConfigurator.swift in Sources */,
 				1B21139C2912BB5500C1977D /* NetworkService.swift in Sources */,
 				1B3C66662923F05100B94645 /* TabBarInteractor.swift in Sources */,
+				1B3C66702924039A00B94645 /* FavoriteFilmView + SetupUI.swift in Sources */,
 				1BC2ED1828FD26E30050349D /* DetailFilmPresenter.swift in Sources */,
 				1BC2ED1228FD25620050349D /* DetailFilmView.swift in Sources */,
 				1B3C66682923F19000B94645 /* TabBarRouter.swift in Sources */,
+				1B3C666E2923FB7B00B94645 /* FavoriteFilmsView + Extensions.swift in Sources */,
 				1BC2ED3228FD5C480050349D /* FavoriteFilmsInteractor.swift in Sources */,
 				1BC2ED2628FD57E50050349D /* FullPicView.swift in Sources */,
 				1BC2ED3428FD5DAB0050349D /* FavoriteFilmsRouter.swift in Sources */,

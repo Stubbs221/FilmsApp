@@ -27,6 +27,12 @@ final class FavoriteFilmsPresenter: FavoriteFilmsPresenterInput {
         self.view = view
         self.interactor = interactor
         self.router = router
+        
+        
+        DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + 0.1) {
+            self.interactor.fetchFavoriteFilms()
+        }
+        
     }
 }
 
@@ -35,5 +41,9 @@ extension FavoriteFilmsPresenter: FavoriteFilmsViewOutput {
 }
 
 extension FavoriteFilmsPresenter: FavoriteFilmsInteractorOutput {
+    func interactorDidFetchFavorite(films: [Item]) {
+        self.view.updateTableView(with: films)
+    }
+    
     
 }
