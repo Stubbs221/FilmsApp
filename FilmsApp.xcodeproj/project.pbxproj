@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1E7B48292EB28F0050A7F2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E7B47292EB28F0050A7F2 /* UIColorExtension.swift */; };
 		1B21139C2912BB5500C1977D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21139B2912BB5500C1977D /* NetworkService.swift */; };
 		1B283A3128FC65D100B900D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B283A3028FC65D100B900D9 /* AppDelegate.swift */; };
 		1B283A3328FC65D100B900D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B283A3228FC65D100B900D9 /* SceneDelegate.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B1E7B47292EB28F0050A7F2 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		1B21139B2912BB5500C1977D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		1B283A2D28FC65D100B900D9 /* FilmsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B283A3028FC65D100B900D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1E7B46292EB27E0050A7F2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B1E7B47292EB28F0050A7F2 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1B21139A2912BB4800C1977D /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +168,7 @@
 		1B283A2F28FC65D100B900D9 /* FilmsApp */ = {
 			isa = PBXGroup;
 			children = (
+				1B1E7B46292EB27E0050A7F2 /* Extensions */,
 				1B3C66592923C9DD00B94645 /* TabBarModule */,
 				1B4D3FC12908711300AE8138 /* RoundingTransition.swift */,
 				1BCFF55A2901E5560048513D /* PosterFullModule */,
@@ -601,6 +612,7 @@
 				1BC2ED2428FD56B50050349D /* FilmPicsModuleConfigurator.swift in Sources */,
 				1BC2ED2A28FD592E0050349D /* FullPicRouter.swift in Sources */,
 				1BC17D9328FF2DD4000C32AC /* DetailFilmView + SetupUI.swift in Sources */,
+				1B1E7B48292EB28F0050A7F2 /* UIColorExtension.swift in Sources */,
 				1BC2ED3C28FDBEE10050349D /* MainScreenView + Extensions.swift in Sources */,
 				1BC17D9528FF2FDD000C32AC /* DetailFilmView + Actions.swift in Sources */,
 				1BC2ED1628FD265F0050349D /* DetailFilmRouter.swift in Sources */,

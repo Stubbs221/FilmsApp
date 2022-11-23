@@ -32,12 +32,13 @@ class FavoriteFilmsView: UIViewController, FavoriteFilmsViewInput {
 
     lazy var favoriteFilmsTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.backgroundColor = .white
+        tableView.backgroundColor = .orangeFAColor
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(FavoriteFilmCell.self, forCellReuseIdentifier: FavoriteFilmCell.reuseIdentifier)
         tableView.separatorStyle = .none
+        
         return tableView
     }()
     

@@ -76,9 +76,9 @@ class FavoriteFilmCell: UITableViewCell {
     }
     
     private func setupUI() {
-        backgroundColor = .systemGray3
+        backgroundColor = .lightYellowFAColor
         contentView.translatesAutoresizingMaskIntoConstraints = false
-        contentView.backgroundColor = .white
+        contentView.backgroundColor = .lightOrangeFAColor
         contentView.layer.cornerRadius = 10
         
         NSLayoutConstraint.activate([
