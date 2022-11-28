@@ -14,13 +14,17 @@ protocol MainScreenInteractorInput {
 }
 
 protocol MainScreenInteractorOutput: AnyObject {
-    func interactorDidFetchMainScreenInteractorOutput(with data: DiscoverMovieModel?)
+    func interactorDidFetchMainScreenInteractorOutput(with state: LoadingState)
 }
 
 final class MainScreenInteractor: MainScreenInteractorInput {
     weak var output: MainScreenInteractorOutput?
     
     func fetchDiscoverMovieData() {
-        self.output?.interactorDidFetchMainScreenInteractorOutput(with: TheMovieDataBaseAPI.shared.getDiscoverMovies())
+        
+        TheMovieDataBaseAPI.shared.getDiscoverMovies { [weak self] state in
+            guard let self else { return }
+            self.output?.interactorDidFetchMainScreenInteractorOutput(with: state)
+        }
     }
 }

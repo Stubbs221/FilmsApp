@@ -40,10 +40,18 @@ extension MainScreenPresenter: MainScreenViewOutput {
 }
 
 extension MainScreenPresenter: MainScreenInteractorOutput {
-    func interactorDidFetchMainScreenInteractorOutput(with data: DiscoverMovieModel?) {
-        guard let data = data else { return }
-        print(data)
+    func interactorDidFetchMainScreenInteractorOutput(with state: LoadingState) {
+        switch state {
+        case .success(let discoverMovieModel):
+            self.view.filmsArray = discoverMovieModel
+        case .failure(let error):
+            self.view.errorDescription = error.description
+        case .loading:
+            break
+        }
     }
+    
+ 
     
     
 }

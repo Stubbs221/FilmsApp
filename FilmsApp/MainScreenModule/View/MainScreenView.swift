@@ -9,6 +9,9 @@ import UIKit
 
 protocol MainScreenViewInput: AnyObject {
     var output: MainScreenViewOutput? { get set }
+    
+    var filmsArray: DiscoverMovieModel? { get set }
+    var errorDescription: String? { get set }
 }
 
 protocol MainScreenViewOutput {
@@ -19,16 +22,35 @@ class MainScreenView: UIViewController, MainScreenViewInput {
     var output: MainScreenViewOutput?
     
 
-    var filmsArray: DiscoverMovieModel?
+    var filmsArray: DiscoverMovieModel? {
+        didSet {
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+
+            }
+        }
+    }
+    var errorDescription: String? {
+        didSet {
+            DispatchQueue.main.async {
+                self.errorDescriptionView.addSubview(self.errorDescriptionLabel)
+                self.errorDescriptionLabel.text = self.errorDescription!
+                self.view.addSubview(self.errorDescriptionView)
+            }
+           
+        }
+    }
     
-    var mockDataArray: [MainScreenItemModel] = Array(repeating: MainScreenItemModel(filmPosterImage: UIImage(named: "testImage")!, originalTitle: "Slime", releaseDate: "2009", rating: "9/10", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lectus pellentesque, pellentesque ex eu, laoreet purus. Cras vel ipsum rutrum, tincidunt lectus sed, vehicula felis. Nulla faucibus dignissim purus ac mattis. Nunc ultrices luctus venenatis. Nulla sit amet magna venenatis, mollis ex sed, lacinia justo. Nunc imperdiet sit amet."), count: 10)
+//    var mockDataArray: [MainScreenItemModel] = Array(repeating: MainScreenItemModel(filmPosterImage: UIImage(named: "testImage")!, originalTitle: "Slime", releaseDate: "2009", rating: "9/10", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at lectus pellentesque, pellentesque ex eu, laoreet purus. Cras vel ipsum rutrum, tincidunt lectus sed, vehicula felis. Nulla faucibus dignissim purus ac mattis. Nunc ultrices luctus venenatis. Nulla sit amet magna venenatis, mollis ex sed, lacinia justo. Nunc imperdiet sit amet."), count: 10)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         setupUI()
         setupNavigation()
-        self.output?.viewIsReady()
+        DispatchQueue.global(qos: .userInitiated).async {
+            self.output?.viewIsReady()
+        }
         
     }
     
@@ -49,5 +71,20 @@ class MainScreenView: UIViewController, MainScreenViewInput {
         searchBar.translatesAutoresizingMaskIntoConstraints = false
         searchBar.delegate = self
         return searchBar
+    }()
+    
+    lazy var errorDescriptionView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .white
+        return view
+    }()
+    
+    lazy var errorDescriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.center = errorDescriptionView.center
+        label.font = UIFont.systemFont(ofSize: 22)
+        return label
     }()
 }

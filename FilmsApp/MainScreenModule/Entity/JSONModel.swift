@@ -17,13 +17,15 @@ class JSONModel: Codable {
 }
 
 struct DiscoverMovieModel: Codable {
-    var pages: Int
+    var page: Int
     var results: [Movie]
+    var total_pages: Int
+    var total_results: Int
 }
 
 struct Movie: Codable {
     var adult: Bool
-    var backDropPath: String
+    var backDropPath: String?
     var genreIDs: [Int]
     var id: Int
     var originalLanguage: String
@@ -42,7 +44,7 @@ struct Movie: Codable {
         case backDropPath = "backdrop_path"
         case genreIDs = "genre_ids"
         case id = "id"
-        case originalLanguage = "originalLanguage"
+        case originalLanguage = "original_language"
         case originalTitle = "original_title"
         case overview = "overview"
         case popularity = "popularity"
