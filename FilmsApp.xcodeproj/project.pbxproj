@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0761952935009400313B1E /* TheMovieDataBaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0761942935009400313B1E /* TheMovieDataBaseAPI.swift */; };
+		1B0761972935094800313B1E /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0761962935094800313B1E /* LoadingState.swift */; };
+		1B076199293509C700313B1E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B076198293509C700313B1E /* NetworkError.swift */; };
 		1B1E7B48292EB28F0050A7F2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1E7B47292EB28F0050A7F2 /* UIColorExtension.swift */; };
 		1B21139C2912BB5500C1977D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B21139B2912BB5500C1977D /* NetworkService.swift */; };
 		1B283A3128FC65D100B900D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B283A3028FC65D100B900D9 /* AppDelegate.swift */; };
@@ -64,6 +67,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0761942935009400313B1E /* TheMovieDataBaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDataBaseAPI.swift; sourceTree = "<group>"; };
+		1B0761962935094800313B1E /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		1B076198293509C700313B1E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		1B1E7B47292EB28F0050A7F2 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		1B21139B2912BB5500C1977D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		1B283A2D28FC65D100B900D9 /* FilmsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,9 +139,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0761932935006D00313B1E /* TheMovieDataBaseAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1B0761942935009400313B1E /* TheMovieDataBaseAPI.swift */,
+				1B0761962935094800313B1E /* LoadingState.swift */,
+				1B076198293509C700313B1E /* NetworkError.swift */,
+			);
+			path = TheMovieDataBaseAPI;
+			sourceTree = "<group>";
+		};
 		1B1E7B46292EB27E0050A7F2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1B0761932935006D00313B1E /* TheMovieDataBaseAPI */,
 				1B1E7B47292EB28F0050A7F2 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
@@ -599,8 +616,10 @@
 				1B3102BA28FC68EB0013AA10 /* MainScreenInteractor.swift in Sources */,
 				1B3C66602923CA6800B94645 /* TabBarPresenter.swift in Sources */,
 				1BC2ED3828FD73400050349D /* FavoriteFilmsModuleConfigurator.swift in Sources */,
+				1B0761972935094800313B1E /* LoadingState.swift in Sources */,
 				1BC2ED2228FD3A4B0050349D /* FilmPicsPresenter.swift in Sources */,
 				1BC2ED3628FD5DF30050349D /* FavoriteFilmsPresenter.swift in Sources */,
+				1B076199293509C700313B1E /* NetworkError.swift in Sources */,
 				1BC2ED2E28FD5AF90050349D /* FullPicModuleConfigurator.swift in Sources */,
 				1BC2ED3A28FDBB200050349D /* JSONModel.swift in Sources */,
 				1BC2ED4028FDD8D20050349D /* MainScreenItemModel.swift in Sources */,
@@ -610,6 +629,7 @@
 				1B3C666C2923FB3600B94645 /* FavoriteFilmCell.swift in Sources */,
 				1B3102B828FC67E40013AA10 /* NavigationBuilder.swift in Sources */,
 				1BC2ED2428FD56B50050349D /* FilmPicsModuleConfigurator.swift in Sources */,
+				1B0761952935009400313B1E /* TheMovieDataBaseAPI.swift in Sources */,
 				1BC2ED2A28FD592E0050349D /* FullPicRouter.swift in Sources */,
 				1BC17D9328FF2DD4000C32AC /* DetailFilmView + SetupUI.swift in Sources */,
 				1B1E7B48292EB28F0050A7F2 /* UIColorExtension.swift in Sources */,

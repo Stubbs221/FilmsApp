@@ -21,6 +21,6 @@ extension FavoriteFilmsView {
     func setupNavigation() {
         navigationController?.navigationBar.topItem?.title = "Избранное"
         navigationController?.navigationBar.backgroundColor = .orangeFAColor
-//        navigationController?.navigationBar.barTintColor = .orangeFAColor
+
     }
 }

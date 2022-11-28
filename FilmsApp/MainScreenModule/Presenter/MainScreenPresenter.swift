@@ -32,9 +32,18 @@ final class MainScreenPresenter: MainScreenPresenterInput {
 }
 
 extension MainScreenPresenter: MainScreenViewOutput {
+    func viewIsReady() {
+        self.interactor.fetchDiscoverMovieData()
+    }
+    
     
 }
 
 extension MainScreenPresenter: MainScreenInteractorOutput {
+    func interactorDidFetchMainScreenInteractorOutput(with data: DiscoverMovieModel?) {
+        guard let data = data else { return }
+        print(data)
+    }
+    
     
 }

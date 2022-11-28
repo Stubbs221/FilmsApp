@@ -10,15 +10,17 @@ import UIKit
 protocol MainScreenInteractorInput {
     var output: MainScreenInteractorOutput? { get set }
     
-//    func fetchData
+    func fetchDiscoverMovieData()
 }
 
 protocol MainScreenInteractorOutput: AnyObject {
-    
+    func interactorDidFetchMainScreenInteractorOutput(with data: DiscoverMovieModel?)
 }
 
 final class MainScreenInteractor: MainScreenInteractorInput {
     weak var output: MainScreenInteractorOutput?
     
-    
+    func fetchDiscoverMovieData() {
+        self.output?.interactorDidFetchMainScreenInteractorOutput(with: TheMovieDataBaseAPI.shared.getDiscoverMovies())
+    }
 }
